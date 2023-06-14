@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-image: url("https://static.vecteezy.com/system/resources/previews/002/884/043/original/abstract-red-and-black-futuristic-gaming-background-in-livestream-free-vector.jpg");
+        }
+        #formAgregarCliente, #mostrarClientes, #formAgregarJuego, #tarjetasJuegos{
+            margin-top: 160px;
+        }
+        #navBarra{
+            color: brown;
+        }
+        label{
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inicio del nav ---------------------------------------------------------------->
+
+    <div class="container-fluid">
+
+        <nav id="navBarra" style="background-color: brown;"  class="navbar navbar-expand-lg ">
+            <div style="background-color: brown;" class="container-fluid">
+            <a id="tituloNav" class="navbar-brand" href="#">Video Juegos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div  class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button class="btn btn-dark"aria-current="page" id="botonHome" >Home</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" id="botonMostrarClientes" class="btn btn-dark ms-1">Clientes</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" id="botonMostrarVideoJuegos" class="btn btn-dark ms-1">Video Juegos</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark ms-1" id="botonVentas">Ventas</button>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-controller"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-1"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-1-fill"></i></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-2"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-2-fill"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-3"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-3-fill"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-4"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-4-fill"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-joystick"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-controller"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-1"></i></h1>
+                </li>
+                <li class="nav-item">
+                    <h2 class="ms-5" style="color: aliceblue;"><i class="bi bi-dice-1-fill"></i></i></h1>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+    
+
+    <!-- Fin del Nav ------------------------------------------------------------------>
+
+    <!-- Imagen header --------------------------------------------------------------
+        <div class="container fluid">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="https://www.fundaciontelefonica.uy/wp-content/uploads/2020/09/Dise%C3%B1o-de-videojuegos-Hero.png" width="432" height="80" alt="">
+
+                            </div>
+                            <div class="col-6">
+                                <img src="https://www.fundaciontelefonica.uy/wp-content/uploads/2020/09/Dise%C3%B1o-de-videojuegos-Hero.png" width="430" height="80" alt="">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+        </div>
+     Fin imagen header-->
+
+     <!-- Home ----------------------------------------------------------------->
+
+        <div id="home" style="margin-top: 100px;" class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+                <div class="col-8">
+                    <div class="container-fluid">
+                        <img style=" border-radius: 60%;" width="1100px"
+                        src="https://www.creativefabrica.com/wp-content/uploads/2021/06/03/Metallic-texture-gaming-background-Graphics-12847421-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+
+                </div>
+            </div>
+        </div>
+
+     <!-- Fin home-+-->
+
+  <!-- Inicio Seccion Clientes -------------------------------------------------------->
+
+  <div id="SeccionClientes"  class="container mt-3">
+
+    <div id="formAgregarCliente"  class="container-fluid mb-5 visually-hidden">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <form class="row g-3">
+            <div class="col-md-4">
+              <label for="Identificacion" class="form-label">Identificacion</label>
+              <input type="text" class="form-control" id="Identificacion" required>
+            </div>
+            <div class="col-md-4">
+              <label for="Nombres" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="Nombres" required>
+            </div>
+            <div class="col-md-4">
+              <label for="Apellidos" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="Apellidos" required>
+            </div>
+            <div class="col-md-6">
+              <label for="Email" class="form-label">Email</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="text" class="form-control" id="Email" aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="Telefono" class="form-label">Telefono</label>
+              <input type="text" class="form-control" id="Telefono" required>
+            </div>
+            <div class="col-md-3">
+              <label for="Nacionalidad" class="form-label">Nacionalidad</label>
+              <select class="form-select" id="Nacionalidad" required>
+                <option selected disabled value="">Choose...</option>
+                <option value="Colombiano">Colombiano</option>
+                <option value="Americano">Americano</option>
+                <option value="Español">Español</option>
+                <option value="Mexicano">Mexicano</option>
+                <option value="Aleman">Aleman</option>
+                <option value="Indu">Indu</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="FechaNacimiento" class="form-label">Fecha Nacimiento</label>
+              <input type="text" class="form-control" id="FechaNacimiento" required>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Usuario acepto manejo de datos personales?
+                </label>
+              </div>
+            </div>
+            <div id="mostrarBotonEditar" class="col-6 visually-hidden">
+              <button class="btn btn-warning" id="botonEditarClienteForm" type="button">Editar</button>
+            </div>
+            <div id="mostrarBotonEliminar" class="col-6">
+              <button class="btn btn-primary" id="botonGuardarCliente" type="button">Guardar</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-secondary" id="botonOcultarFormCliente" type="button">Ocultar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <hr>
+    </div>
+
+    <!-- Fin Agregar Cliente --------------------------->
+    <!-- Mostrar CLientes ------------------------------>
+
+    <div id="mostrarClientes" class="container-fluid visually-hidden">
+      <div class="row mt-5">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8">
+          <form class="row g-3">
+            <div class="col-auto">
+              <button type="button" id="botonRegistrar" class="btn btn-success mb-2">Resgistrar</button>
+            </div>
+            <div class="col-auto">
+              <input type="text" class="form-control" id="inputBuscarCliente" placeholder="Nombre, Apellido, ID">
+            </div>
+            <div class="col-auto">
+              <button type="button" id="botonBuscarCliente" class="btn btn-secondary mb-3">Buscar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-2">
+
+        </div>
+      </div>
+      <div id="tablaClientes" class="container-fluid">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr class="table-active">
+              <th scope="col"></th>
+              <th scope="col">Identificacion</th>
+              <th scope="col">Nombres</th>
+              <th scope="col">Apellidos</th>
+              <th scope="col">Telefono</th>
+              <th scope="col">Email</th>
+              <th scope="col">Fecha Nacimiento</th>
+              <th scope="col">Nacionalidad</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="insertarCliente">
+            
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Fin Seccion Clientes ------------------------------------------------------------->
+  <!-- Inicio Formulario Agregar Juegos ----------------------------------------------------------------->
+  <div id="formAgregarJuego" class="container-fluid mb-1 visually-hidden">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="Nombre" required>
+          </div>
+          <div class="col-md-3">
+            <label for="Valor" class="form-label">Valor</label>
+            <input type="number" class="form-control" id="Valor" required>
+          </div>
+          <div class="col-md-3">
+            <label for="Puntos" class="form-label">Puntos</label>
+            <input type="text" class="form-control" id="Puntos" required>
+          </div>
+          <div class="col-md-4">
+            <label for="Tematica" class="form-label">Tematica</label>
+                <select class="form-select" id="Tematica" required>
+                    <option selected disabled value="null">Choose...</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Ciencia Ficcion">Ciencia Ficcion</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Accion">Accion</option>
+                    <option value="Shooter">Shooter</option>
+                    <option value="P2P">P2P</option>
+              </select>
+          </div>
+
+          <div class="col-md-4">
+            <label for="Link" class="form-label">Link Imagen</label>
+            <input type="text" class="form-control" id="Link" required>
+          </div>
+          <div class="row mt-2">
+            <div id="mostrarBotonEliminar" class="col-6">
+              <button class="btn btn-primary" id="botonGuardarJuego" type="button">Guardar</button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-secondary" id="botonOcultarFormJuegos" type="button">Ocultar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <hr>
+  </div>
+  <!-- Fin Formulario Agregar Juegos ----------------------------------------------------------------->
+  <!-- Inicio seccion juegos ---------------------------------------------------------------->
+
+  <div id="tarjetasJuegos" class="container-fluid visually-hidden">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="row mb-1 ">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <!-- Inicio  ------------------------------------------------------------------------>
+                  <form class="row g-3">
+                    <div class="col-5">
+                      
+                    </div>
+                    <div class="col-auto">
+                      
+                      <button type="button" id="botonCrearJuego" class="btn btn-success ">Crear</button>
+                    </div>
+                    <div class="col-5">
+                      
+                    </div>
+                  </form>
+                </div>
+                <div class="col-2"></div>
+              </div>
+              <!-- Fin -------------------------------------------------------------------------->
+            <div class="container-fluid">
+                <div id="mostrarJuegos" class="row">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+  </div>
+
+  <!-- Fin seccion Juegos --------------------------------------------------------------------->
+
+  <!-- seccion Modal ------------------------------------------------------------------------------------->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Venta #<span id="spanIdVenta"></span></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="contenidoModal" class="modal-body">
+
+          <div class="row">
+            <p style="font-size: 25px;">Cliente</p>
+            <div  class="col-6 ">
+              <p><strong>Nombres</strong> </p>
+              <p id="nombresCliente"></p>
+            </div>
+            <div  class="col 6">
+              <p><strong>Documento</strong> </p>
+              <p id="documentosCliente"></p>
+            </div>
+            <div class="col-12">
+              <p><strong>Puntos:</strong><span id="puntosClientes" ></span> </p>
+            </div>
+            <hr>
+            <p style="font-size: 25px;">Juego</p>
+            <div class="col-6 ">
+              <p><strong>Titulo</strong><span id="nombreJuego" ></span> </p>
+            </div>
+            <div  class="col 6 ">
+              <p><strong>Tematica: </strong> <span id="tematica"></span> </p>
+            </div>
+            <div id="" class="row">
+                <div class="col-6">
+                    <p><strong>Puntos: </strong> <span id="puntosJuego"></span> </p>
+                </div>
+                <div class="col-6">
+                    <p><strong>Valor: </strong> <span id="valorJuego"></span> </p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" id="botonVender" data-bs-dismiss="modal" class="btn btn-primary">Vender</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fin seccion Modal -------------------------------------------------------------------------------------->
+
+  <!-- Seccion Ventas ----------------------------------------------------------------------------------------->
+
+  <div id="mostrarVentas" class="container-fluid visually-hidden">
+    <div id="resumenVenta" class="container-fluid">
+
+    </div>
+
+    <div id="tablaVentas" class="container-fluid">
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr class="table-active">
+                  <th scope="col">#</th>
+                  <th scope="col">Cliente</th>
+                  <th scope="col">IdCliente</th>
+                  <th scope="col">Juego</th>
+                  <th scope="col">V Base</th>
+                  <th scope="col">V Impuestos</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">Puntos Venta</th>
+                  <th scope="col">Fecha</th>
+                </tr>
+              </thead>
+              <tbody id="insertarVentas">
+                
+    
+              </tbody>
+            </table>
+    </div>
+  </div>
+
+  <!-- Fin seccion Ventas ------------------------------------------------------------------------------------->
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</html>
